@@ -1,0 +1,237 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body { 
+    background: #f1f3f4;
+}
+
+ 
+/* === FIX SUBMENU TEXT WRAP === */
+.nav-sidebar .nav-treeview {
+    padding-left: 0 !important;
+}
+
+.nav-sidebar .nav-treeview .nav-link {
+    display: flex !important;
+    align-items: flex-start !important;
+}
+
+/* biar text bisa turun */
+.nav-sidebar .nav-treeview .nav-link p {
+    white-space: normal !important;
+    line-height: 1.2;
+    margin: 0;
+}
+
+/* 🔥 INI KUNCI UTAMA: hilangkan indent bawaan */
+.nav-sidebar .nav-treeview .nav-link p {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+/* opsional: rapihin icon supaya tidak ikut turun */
+.nav-sidebar .nav-treeview .nav-icon {
+    font-size: 10px !important;
+    margin-top: 3px;
+}
+
+/* MATIKAN SEMUA ANIMASI */
+* {
+    animation: none !important;
+    transition: none !important;
+}
+
+/* khusus adminlte */
+.content-wrapper,
+.main-sidebar,
+.navbar {
+    transition: none !important;
+}
+
+/* hilangkan efek fade */
+.fade {
+    opacity: 1 !important;
+    transition: none !important;
+}
+ 
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa; /* abu lembut */
+}
+
+.table-striped tbody tr:hover {
+    background-color: #e9ecef; /* hover effect */
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+
+.text-right {
+    font-family: monospace;
+}
+
+/* untuk box form login =================== */
+/* wrapper */
+.login-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eef1f5;
+}
+
+/* card */
+.login-card {
+    display: flex;
+    width: 900px;
+    background: #f4f4f4;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+/* kiri */
+.login-left {
+    width: 40%;
+    padding-right: 20px;
+}
+
+.login-left h2 {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.login-left p {
+    margin-top: 10px;
+}
+
+/* icon */
+.login-icon {
+    width: 80px;
+}
+
+/* kanan */
+.login-right {
+    width: 60%;
+}
+
+/* input */
+.form-control {
+    border: 2px solid #2f6fed;
+    border-radius: 6px;
+    height: 45px;
+}
+
+/* tombol */
+.btn-login {
+    background: #2f6fed;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 20px;
+}
+
+/* align kanan */
+.text-end {
+    text-align: right;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+/* Card */
+.login-box {
+  background: #fff;
+  padding: 40px;
+  width: 360px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Logo */
+.logo img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+/* Title */
+h2 {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #5f6368;
+  margin-bottom: 30px;
+}
+
+/* Input */
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-group label {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  color: #999;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Focus effect */
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -10px;
+  font-size: 12px;
+  color: #1a73e8;
+}
+
+.input-group input:focus {
+  border-bottom: 2px solid #1a73e8;
+}
+
+/* Options */
+.options {
+  text-align: left;
+  font-size: 13px;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+/* Button */
+.btn-login {
+  width: 100%;
+  padding: 10px;
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background: #1669c1;
+}
+/* ========== end of css form login */
